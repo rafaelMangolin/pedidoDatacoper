@@ -1,0 +1,14 @@
+br\com\datacoper\pedido\application\service\ProdutoService.class
+br\com\datacoper\pedido\application\repository\ItemEstoqueRepository.class
+br\com\datacoper\pedido\application\service\PessoaService.class
+br\com\datacoper\pedido\application\repository\ItemPedidoRepository.class
+br\com\datacoper\pedido\application\service\ItemPedidoService.class
+br\com\datacoper\pedido\application\repository\PedidoRepository.class
+br\com\datacoper\pedido\application\service\PapelService.class
+br\com\datacoper\pedido\application\repository\PessoaRepository.class
+br\com\datacoper\pedido\application\service\PedidoService.class
+br\com\datacoper\pedido\application\service\ItemEstoqueService.class
+br\com\datacoper\pedido\application\repository\PapelRepository.class
+br\com\datacoper\pedido\application\repository\ProdutoRepository.class
+br\com\datacoper\pedido\application\repository\CategoriaRepository.class
+br\com\datacoper\pedido\application\service\CategoriaService.class

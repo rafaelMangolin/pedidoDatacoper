@@ -1,0 +1,160 @@
+{
+  "coisa": {
+    "title": "Coisa"
+  ,"menulabel": "Coisa "
+  ,"id": "Identificador"
+  ,"descricao": "Descrição"
+  ,"valor": "Valor"
+  ,"ativo": "Ativo"
+  ,"new": "Novo"
+  ,"base": "Coisa"
+  ,"list": "Listar Coisa"
+  ,"edit": "Editar Coisa"
+  ,"insert": "Inserir Coisa"
+  }
+    ,"pedido":{
+        "title":"Pedido"
+        ,"menulabel": "Pedido"
+        ,"edit": "Editar Pedido"
+        ,"insert": "Inserir Pedido"
+        ,"list": "Consulta Pedido"
+        ,"id": "id"
+        ,"data":"Data"
+        ,"valortotal":"ValorTotal"
+        ,"observacao":"Observacao"
+        ,"tipooperacao":"TipoOperacao"
+        ,"itenspedido":"ItensPedido"
+        ,"pessoa":"Pessoa"
+    }
+
+    ,"pessoa":{
+        "title":"Pessoa"
+        ,"menulabel": "Pessoa"
+        ,"edit": "Editar Pessoa"
+        ,"insert": "Inserir Pessoa"
+        ,"list": "Consulta Pessoa"
+        ,"id": "id"
+        ,"nome":"Nome"
+        ,"datanascimento":"DataNascimento"
+        ,"sexo":"Sexo"
+        ,"docreg":"DocReg"
+        ,"cpf":"Cpf"
+        ,"telefone":"Telefone"
+        ,"endereco":"Endereco"
+        ,"email":"Email"
+        ,"papeis":"Papeis"
+    }
+
+    ,"papel":{
+        "title":"Papel"
+        ,"menulabel": "Papel"
+        ,"edit": "Editar Papel"
+        ,"insert": "Inserir Papel"
+        ,"list": "Consulta Papel"
+        ,"id": "id"
+        ,"descricao":"Descricao"
+    }
+
+    ,"produto":{
+        "title":"Produto"
+        ,"menulabel": "Produto"
+        ,"edit": "Editar Produto"
+        ,"insert": "Inserir Produto"
+        ,"list": "Consulta Produto"
+        ,"id": "id"
+        ,"preco":"Preco"
+        ,"descricao":"Descricao"
+        ,"unidademedida":"UnidadeMedida"
+        ,"categoria":"Categoria"
+    }
+
+    ,"itempedido":{
+        "title":"ItemPedido"
+        ,"menulabel": "ItemPedido"
+        ,"edit": "Editar ItemPedido"
+        ,"insert": "Inserir ItemPedido"
+        ,"list": "Consulta ItemPedido"
+        ,"id": "id"
+        ,"precounitario":"PrecoUnitario"
+        ,"valortotal":"ValorTotal"
+        ,"quantidade":"Quantidade"
+        ,"pedido":"Pedido"
+    }
+
+    ,"categoria":{
+        "title":"Categoria"
+        ,"menulabel": "Categoria"
+        ,"edit": "Editar Categoria"
+        ,"insert": "Inserir Categoria"
+        ,"list": "Consulta Categoria"
+        ,"id": "id"
+        ,"nome":"Nome"
+        ,"codigointerno":"CodigoInterno"
+    }
+
+    ,"itemestoque":{
+        "title":"ItemEstoque"
+        ,"menulabel": "ItemEstoque"
+        ,"edit": "Editar ItemEstoque"
+        ,"insert": "Inserir ItemEstoque"
+        ,"list": "Consulta ItemEstoque"
+        ,"id": "id"
+        ,"quantidade":"Quantidade"
+        ,"data":"Data"
+        ,"local":"Local"
+        ,"produto":"Produto"
+    }
+
+,"address": {
+  "cep": "CEP"
+,"numero": "Número"
+,"bairro":"Bairro"
+,"uf":"Estado"
+,"pais": "País"
+,"complemento": "Complemento"
+,"logradouro": "Logradouro"
+,"tipologradouro": "Tipo de Logradouro"
+,"localidade": "Localização"
+}
+,"formbuttons": {
+  "inserir": "Continuar inserindo"
+}
+,"table": {
+  "select": "Selecionar Todos",
+  "clean": "Limpar pesquisa"
+}
+, "advanced": {
+  "gt": "maior que"
+,"ge": "maior igual"
+,"lt": "menor que"
+,"le": "menor igual"
+,"eq": "igual "
+,"ne": "diferente de"
+,"in": "faz parte de"
+,"not_in": "não faz parte de"
+,"contains": "contém"
+,"starts_with": "começa com"
+,"ends_with": "termina com"
+,"not_contains": "não contém"
+},
+  "general":{
+    "coisa": "Coisa Base",
+    "forgot": "Esqueceu sua Senha?"
+  },
+  "welcome":{
+     "menulabel": "Welcome"
+   },
+   "home": {
+  "menulabel": "Início"
+},
+"gumgatagdefinition":{
+    "name":"Nome"
+    ,"menuLabel": "Tags"
+},
+"configuration": {
+  "menulabel": "Configurações",
+  "gumgatagdefinition": "Tags",
+  "gumgacustomfield": "Atributos Genéricos"
+}
+
+}

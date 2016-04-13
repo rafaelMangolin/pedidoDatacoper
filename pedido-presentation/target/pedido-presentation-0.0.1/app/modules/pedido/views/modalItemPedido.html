@@ -1,0 +1,42 @@
+	<form name="Modal">
+	    <div class="modal-header">
+	        <h3 class="modal-title" gumga-translate-tag="itempedido.title"></h3>
+	    </div>
+	    <div class="modal-body" style="overflow: auto">
+		
+
+	<div gumga-form-class="precoUnitario">
+		<label gumga-translate-tag="pedido.precoUnitario">precoUnitario"</label>
+		<input gumga-error type="text" name="precoUnitario"  gumga-required  ng-model="pedido.data.precoUnitario.value" class="form-control" ui-money-mask="2"/>
+	</div>
+		
+
+	<div gumga-form-class="valorTotal">
+		<label gumga-translate-tag="pedido.valorTotal">valorTotal"</label>
+		<input gumga-error type="text" name="valorTotal"  gumga-required  ng-model="pedido.data.valorTotal.value" class="form-control" ui-money-mask="2"/>
+	</div>
+		
+	<div gumga-form-class="quantidade">
+		<label gumga-translate-tag="pedido.quantidade">quantidade</label>
+		<input gumga-error type="text" name="quantidade" ng-model="pedido.data.quantidade"  gumga-required  class="form-control" />
+	</div>		
+
+	<div gumga-form-class="pedido">
+		<label gumga-translate-tag="pedido.pedido">pedido</label>
+	    <gumga-many-to-one
+	            input-name="pedido"
+	            value="pedido.data.pedido"
+	            search-method="produto.methods.asyncSearch('preco', param)"
+	            field="preco"
+	            authorize-add="true"
+	            post-method="produto.methods.asyncPost(value, 'preco')">
+	    </gumga-many-to-one>
+	</div>
+
+	    </div>
+	    <div class="clearfix"></div>
+	    <div class="modal-footer">
+	        <button type="button" class="btn btn-primary" ng-click="ok(pedido.data)" ng-disabled="Modal.$invalid">OK</button>
+	        <button type="button" class="btn btn-warning" ng-click="cancel()">Cancel</button>
+	    </div>
+	</form>

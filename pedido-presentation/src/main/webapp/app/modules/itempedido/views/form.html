@@ -1,0 +1,41 @@
+<form name="ItemPedidoForm" gumga-form novalidate>
+		
+
+	<div gumga-form-class="precoUnitario">
+		<label gumga-translate-tag="itempedido.precoUnitario">precoUnitario"</label>
+		<input gumga-error type="text" name="precoUnitario"  gumga-required  ng-model="itempedido.data.precoUnitario.value" class="form-control" ui-money-mask="2"/>
+	</div>
+		
+
+	<div gumga-form-class="valorTotal">
+		<label gumga-translate-tag="itempedido.valorTotal">valorTotal"</label>
+		<input gumga-error type="text" name="valorTotal"  gumga-required  ng-model="itempedido.data.valorTotal.value" class="form-control" ui-money-mask="2"/>
+	</div>
+		
+	<div gumga-form-class="quantidade">
+		<label gumga-translate-tag="itempedido.quantidade">quantidade</label>
+		<input gumga-error type="text" name="quantidade" ng-model="itempedido.data.quantidade"  gumga-required  class="form-control" />
+	</div>		
+
+	<div gumga-form-class="pedido">
+		<label gumga-translate-tag="itempedido.pedido">pedido</label>
+	    <gumga-many-to-one
+	            input-name="pedido"
+	            value="itempedido.data.pedido"
+	            search-method="produto.methods.asyncSearch('preco', param)"
+	            field="preco"
+	            authorize-add="true"
+	            post-method="produto.methods.asyncPost(value, 'preco')">
+	    </gumga-many-to-one>
+	</div>
+
+    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+    <gumga-form-buttons
+            back="itempedido.list"
+            submit="itempedido.methods.put(itempedido.data)"
+            position="right"
+            valid="ItemPedidoForm.$valid"
+            confirm-dirty="true"
+            continue="continue">
+    </gumga-form-buttons>    
+</form>

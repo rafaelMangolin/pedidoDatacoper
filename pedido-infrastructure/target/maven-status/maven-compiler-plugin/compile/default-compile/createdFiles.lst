@@ -1,0 +1,4 @@
+br\com\datacoper\infrastructure\config\WebConfig.class
+br\com\datacoper\infrastructure\config\Application.class
+br\com\datacoper\infrastructure\config\ApplicationConstants.class
+br\com\datacoper\infrastructure\config\Bootstrap.class

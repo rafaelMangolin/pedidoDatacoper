@@ -1,0 +1,10 @@
+br\com\datacoper\pedido\api\GumgaRegexApiOperationTranslator$OperationExpression.class
+br\com\datacoper\pedido\api\ProdutoAPI.class
+br\com\datacoper\pedido\seed\Seed.class
+br\com\datacoper\pedido\api\GumgaRegexApiOperationTranslator.class
+br\com\datacoper\pedido\api\ItemPedidoAPI.class
+br\com\datacoper\pedido\api\PessoaAPI.class
+br\com\datacoper\pedido\api\PedidoAPI.class
+br\com\datacoper\pedido\api\ItemEstoqueAPI.class
+br\com\datacoper\pedido\api\CategoriaAPI.class
+br\com\datacoper\pedido\api\PapelAPI.class

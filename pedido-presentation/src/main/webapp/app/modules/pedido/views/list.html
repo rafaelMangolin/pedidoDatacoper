@@ -1,0 +1,51 @@
+	<div class="row">
+	
+	    <div class="col-md-5">
+	      <a ui-sref="pedido.insert" class="btn btn-primary">
+	        <i class="glyphicon glyphicon-plus"></i>Novo
+	      </a>
+	
+	      <button type="button" class="btn btn-danger" ng-click="pedido.methods.delete(selectedValues)" gumga-confirm="Deseja remover?">
+	        <i class="glyphicon glyphicon-trash"></i>Remover
+	      </button>
+	    </div>
+	
+	    <div class="col-md-7">
+	        <gumga-query search="pedido.methods.search(field,param)" advanced-search="pedido.methods.advancedSearch(param)" saved-filters="pedido.methods.getQuery(page)">
+	            <search-field label="id" field="id"></search-field>
+	            <search-field label="data" field="data"></search-field>
+	            <search-field label="valorTotal" field="valortotal"></search-field>
+	            <search-field label="observacao" field="observacao"></search-field>
+	            <search-field label="tipoOperacao" field="tipooperacao"></search-field>
+	            <search-field label="itensPedido" field="itenspedido"></search-field>
+	            <search-field label="pessoa" field="pessoa"></search-field>
+	            <advanced-search-field  type="string"  label="id" field="id"></advanced-search-field>
+	            <advanced-search-field  type="date"  label="data" field="data"></advanced-search-field>
+	            <advanced-search-field  type="money"  label="valorTotal" field="valortotal"></advanced-search-field>
+	            <advanced-search-field  type="string"  label="observacao" field="observacao"></advanced-search-field>
+	            <advanced-search-field  type="string"  label="tipoOperacao" field="tipooperacao"></advanced-search-field>
+	            <advanced-search-field  type="string"  label="itensPedido" field="itenspedido"></advanced-search-field>
+	            <advanced-search-field  type="string"  label="pessoa" field="pessoa"></advanced-search-field>
+	        </gumga-query>
+	    </div>
+	</div>
+	
+	<div class="full-width-without-padding">
+	    <gumga-list sort="pedido.methods.sort(field, dir)"
+	           class="table-striped table-condensed"
+	            data="pedido.data"
+	            configuration="tableConfig">
+	    </gumga-list>
+	</div>
+
+	<pagination ng-model="page"
+	            max-size="10"
+	            boundary-links="true"
+	            previous-text="‹"
+	            next-Text="›"
+	            first-text="«"
+	            last-text="»"
+	            items-per-page="pedido.pageSize"
+	            total-items="pedido.count"
+	            ng-change="pedido.methods.get(page)">
+	</pagination>

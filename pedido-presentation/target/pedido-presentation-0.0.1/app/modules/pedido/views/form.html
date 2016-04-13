@@ -1,0 +1,64 @@
+<form name="PedidoForm" gumga-form novalidate>
+		
+	<div gumga-form-class="quando">
+		<label gumga-translate-tag="pedido.data">data</label>
+		<p class="input-group">
+			<input type="text" name="data" class="form-control"  gumga-required  uib-datepicker-popup="dd/MM/yyyy" ng-model="pedido.data.data" is-open="openedData" ng-click="openedData = !openedData" close-text="Close" />
+			<span class="input-group-btn">
+				<button type="button" class="btn btn-default" ng-click="open()">
+					<i class="glyphicon glyphicon-calendar"></i>
+				</button>
+			</span>
+		</p>
+	</div>		
+
+	<div gumga-form-class="valorTotal">
+		<label gumga-translate-tag="pedido.valorTotal">valorTotal"</label>
+		<input gumga-error type="text" name="valorTotal"  gumga-required  ng-model="pedido.data.valorTotal.value" class="form-control" ui-money-mask="2"/>
+	</div>
+		
+	<div gumga-form-class="observacao">
+		<label gumga-translate-tag="pedido.observacao">observacao</label>
+		<input gumga-error type="text" name="observacao" ng-model="pedido.data.observacao"  class="form-control" />
+	</div>		
+	<div gumga-form-class="tipoOperacao">
+		<label gumga-translate-tag="pedido.tipoOperacao">tipoOperacao</label>
+		<select class="form-control" gumga-error name="tipoOperacao" ng-model="pedido.data.tipoOperacao">
+			<option  ng-selected="value.value === entity.tipoOperacao"  value="{{value.value}}" ng-repeat="value in TipoOperacao">{{value.label}}</option>
+		</select>
+	</div>		
+
+	<div class="full-width-without-padding">
+	    <label for="itensPedido" gumga-translate-tag="pedido.itensPedido"></label>
+	
+		<gumga-one-to-many
+		        children="pedido.data.itensPedido"
+		        template-url="app/modules/pedido/views/modalItemPedido.html"
+		        displayable-property="precounitario"
+		        controller="ModalItemPedidoController">
+		</gumga-one-to-many>
+	</div>
+		
+
+	<div gumga-form-class="pessoa">
+		<label gumga-translate-tag="pedido.pessoa">pessoa</label>
+	    <gumga-many-to-one
+	            input-name="pessoa"
+	            value="pedido.data.pessoa"
+	            search-method="pessoa.methods.asyncSearch('nome', param)"
+	            field="nome"
+	            authorize-add="true"
+	            post-method="pessoa.methods.asyncPost(value, 'nome')">
+	    </gumga-many-to-one>
+	</div>
+
+    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+    <gumga-form-buttons
+            back="pedido.list"
+            submit="pedido.methods.put(pedido.data)"
+            position="right"
+            valid="PedidoForm.$valid"
+            confirm-dirty="true"
+            continue="continue">
+    </gumga-form-buttons>    
+</form>

@@ -1,0 +1,89 @@
+<form name="PessoaForm" gumga-form novalidate>
+		
+	<div gumga-form-class="nome">
+		<label gumga-translate-tag="pessoa.nome">nome</label>
+		<input gumga-error type="text" name="nome" ng-model="pessoa.data.nome"  gumga-required  class="form-control" />
+	</div>		
+	<div gumga-form-class="quando">
+		<label gumga-translate-tag="pessoa.dataNascimento">dataNascimento</label>
+		<p class="input-group">
+			<input type="text" name="dataNascimento" class="form-control"  uib-datepicker-popup="dd/MM/yyyy" ng-model="pessoa.data.dataNascimento" is-open="openedDataNascimento" ng-click="openedDataNascimento = !openedDataNascimento" close-text="Close" />
+			<span class="input-group-btn">
+				<button type="button" class="btn btn-default" ng-click="open()">
+					<i class="glyphicon glyphicon-calendar"></i>
+				</button>
+			</span>
+		</p>
+	</div>		
+	<div gumga-form-class="sexo">
+		<label gumga-translate-tag="pessoa.sexo">sexo</label>
+		<select class="form-control" gumga-error name="sexo" ng-model="pessoa.data.sexo">
+			<option  ng-selected="value.value === entity.sexo"  value="{{value.value}}" ng-repeat="value in valueSexo">{{value.label}}</option>
+		</select>
+	</div>		
+	<div gumga-form-class="docReg">
+		<label gumga-translate-tag="pessoa.docReg">docReg</label>
+		<input gumga-error type="text" name="docReg" ng-model="pessoa.data.docReg"  class="form-control" />
+	</div>		
+
+	<div gumga-form-class="cpf">
+	    <label gumga-translate-tag="pessoa.cpf">"cpf</label>
+	    <input id="cpf"
+	            gumga-mask="999.999.999-99"
+	            gumga-error type="text" name="cpf"
+	            
+	            ng-model="pessoa.data.cpf.value"
+	            class="form-control"/>
+	</div>
+		
+
+	<div gumga-form-class="telefone">
+		<label gumga-translate-tag="pessoa.telefone">telefone</label>
+		<input id="telefone" gumga-error type="text" name="telefone"  ng-model="pessoa.data.telefone.value" class="form-control" ui-br-phone-number/>
+	</div>
+		
+
+	<div class="row">
+		<div class="col-md-12">
+			<gumga-address name="endereco" value="pessoa.data.endereco" street="false"> </gumga-address>
+		</div>
+	</div>
+		
+
+	<div gumga-form-class="email">
+	    <label gumga-translate-tag="pessoa.email">email</label>
+	    <input id="email" gumga-error type="email" name="email"  ng-model="pessoa.data.email.value" class="form-control"/>
+	</div>
+		
+
+    <div class="col-md-6">
+        <label for="papeis" gumga-translate-tag="papel.title"></label>
+    </div>
+    
+    <div class="col-md-6">
+        <label for="pessoa.papeis" gumga-translate-tag="pessoa.papeis"></label>
+    </div>
+
+	<div class="full-width-without-padding">
+	    <gumga-many-to-many 
+	            left-list="papel.data" 
+	            right-list="pessoa.data.papeis" 
+	            left-search="papel.methods.search('descricao', param)"
+	            filter-parameters="descricao"
+	            post-method="papel.methods.save(value)"
+	            authorize-add="true">
+	        <left-field>{{$value.descricao}}</left-field>
+	        <right-field>{{$value.descricao}}</right-field>
+	    </gumga-many-to-many>
+	</div>
+	
+    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+    <gumga-form-buttons
+            back="pessoa.list"
+            submit="pessoa.methods.put(pessoa.data)"
+            position="right"
+            valid="PessoaForm.$valid"
+            confirm-dirty="true"
+            continue="continue">
+    </gumga-form-buttons>    
+</form>
