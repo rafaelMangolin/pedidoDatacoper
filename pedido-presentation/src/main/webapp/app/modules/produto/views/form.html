@@ -8,14 +8,19 @@
 		
 	<div gumga-form-class="descricao">
 		<label gumga-translate-tag="produto.descricao">descricao</label>
-		<input gumga-error type="text" name="descricao" ng-model="produto.data.descricao"  gumga-required  class="form-control" />
+                <textarea ng-model="produto.data.descricao" class="form-control" name="descricao" gumga-required
+                          style="resize: none;"></textarea>
+		<!--<input gumga-error type="text" name="descricao" ng-model="produto.data.descricao"  gumga-required  class="form-control" />-->
 	</div>		
 	<div gumga-form-class="unidadeMedida">
 		<label gumga-translate-tag="produto.unidadeMedida">unidadeMedida</label>
-		<input gumga-error type="text" name="unidadeMedida" ng-model="produto.data.unidadeMedida"  class="form-control" />
+                <select ng-model="produto.data.unidadeMedida" name="unidadeMedida" class="form-control"
+                        ng-options="um for um in unidadesMedida">
+                    
+                </select>
 	</div>		
 
-	<div gumga-form-class="categoria">
+    <div gumga-form-class="categoria">
 		<label gumga-translate-tag="produto.categoria">categoria</label>
 	    <gumga-many-to-one
 	            input-name="categoria"

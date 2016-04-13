@@ -4,7 +4,10 @@ define(['app/apiLocations'], function(APILocation) {
 
 	function ProdutoService(GumgaRest) {
     	var Service = new GumgaRest(APILocation.apiLocation + '/api/produto');
-
+        
+        Service.getMedidas = function(){
+            return this.extend('get', '/medidas');
+        }
     	return Service;
     }
 
