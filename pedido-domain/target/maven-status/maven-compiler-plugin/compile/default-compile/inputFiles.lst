@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\gumga\pedido2\pedidoDatacoper\pedido-domain\src\main\java\br\com\datacoper\pedido\domain\model\Example.java
 C:\gumga\pedido2\pedidoDatacoper\pedido-domain\target\generated-sources\java\br\com\datacoper\pedido\domain\model\QPessoa.java
 C:\gumga\pedido2\pedidoDatacoper\pedido-domain\src\main\java\br\com\datacoper\pedido\domain\model\TipoOperacao.java
@@ -18,3 +19,25 @@ C:\gumga\pedido2\pedidoDatacoper\pedido-domain\src\main\java\br\com\datacoper\pe
 C:\gumga\pedido2\pedidoDatacoper\pedido-domain\src\main\java\br\com\datacoper\pedido\domain\model\Produto.java
 C:\gumga\pedido2\pedidoDatacoper\pedido-domain\src\main\java\br\com\datacoper\pedido\domain\model\Munif.java
 C:\gumga\pedido2\pedidoDatacoper\pedido-domain\target\generated-sources\java\br\com\datacoper\pedido\domain\model\QItemPedido.java
+=======
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-domain\src\main\java\br\com\datacoper\pedido\domain\model\ItemPedido.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-domain\src\main\java\br\com\datacoper\pedido\domain\model\ItemEstoque.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-domain\src\main\java\br\com\datacoper\pedido\domain\model\TipoOperacao.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-domain\target\generated-sources\java\br\com\datacoper\pedido\domain\model\QMunif.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-domain\target\generated-sources\java\br\com\datacoper\pedido\domain\model\QPedido.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-domain\target\generated-sources\java\br\com\datacoper\pedido\domain\model\QPessoa.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-domain\src\main\java\br\com\datacoper\pedido\domain\model\Pessoa.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-domain\target\generated-sources\java\br\com\datacoper\pedido\domain\model\QCategoria.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-domain\target\generated-sources\java\br\com\datacoper\pedido\domain\model\QPapel.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-domain\src\main\java\br\com\datacoper\pedido\domain\model\Categoria.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-domain\src\main\java\br\com\datacoper\pedido\domain\model\Example.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-domain\target\generated-sources\java\br\com\datacoper\pedido\domain\model\QProduto.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-domain\target\generated-sources\java\br\com\datacoper\pedido\domain\model\QItemEstoque.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-domain\target\generated-sources\java\br\com\datacoper\pedido\domain\model\QItemPedido.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-domain\src\main\java\br\com\datacoper\pedido\domain\model\Produto.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-domain\src\main\java\br\com\datacoper\pedido\domain\model\Papel.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-domain\src\main\java\br\com\datacoper\pedido\domain\model\Munif.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-domain\src\main\java\br\com\datacoper\pedido\domain\model\Sexo.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-domain\src\main\java\br\com\datacoper\pedido\domain\model\UnidadeMed.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-domain\src\main\java\br\com\datacoper\pedido\domain\model\Pedido.java
+>>>>>>> origin/master

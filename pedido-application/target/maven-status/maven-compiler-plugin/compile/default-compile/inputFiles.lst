@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\gumga\pedido2\pedidoDatacoper\pedido-application\src\main\java\br\com\datacoper\pedido\application\repository\PapelRepository.java
 C:\gumga\pedido2\pedidoDatacoper\pedido-application\src\main\java\br\com\datacoper\pedido\application\repository\PedidoRepository.java
 C:\gumga\pedido2\pedidoDatacoper\pedido-application\src\main\java\br\com\datacoper\pedido\application\service\PessoaService.java
@@ -12,3 +13,19 @@ C:\gumga\pedido2\pedidoDatacoper\pedido-application\src\main\java\br\com\datacop
 C:\gumga\pedido2\pedidoDatacoper\pedido-application\src\main\java\br\com\datacoper\pedido\application\repository\CategoriaRepository.java
 C:\gumga\pedido2\pedidoDatacoper\pedido-application\src\main\java\br\com\datacoper\pedido\application\repository\ItemEstoqueRepository.java
 C:\gumga\pedido2\pedidoDatacoper\pedido-application\src\main\java\br\com\datacoper\pedido\application\repository\ProdutoRepository.java
+=======
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-application\src\main\java\br\com\datacoper\pedido\application\service\CategoriaService.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-application\src\main\java\br\com\datacoper\pedido\application\repository\PessoaRepository.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-application\src\main\java\br\com\datacoper\pedido\application\service\ItemEstoqueService.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-application\src\main\java\br\com\datacoper\pedido\application\service\PedidoService.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-application\src\main\java\br\com\datacoper\pedido\application\repository\PedidoRepository.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-application\src\main\java\br\com\datacoper\pedido\application\service\PapelService.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-application\src\main\java\br\com\datacoper\pedido\application\repository\ProdutoRepository.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-application\src\main\java\br\com\datacoper\pedido\application\service\ProdutoService.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-application\src\main\java\br\com\datacoper\pedido\application\repository\CategoriaRepository.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-application\src\main\java\br\com\datacoper\pedido\application\repository\ItemEstoqueRepository.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-application\src\main\java\br\com\datacoper\pedido\application\service\ItemPedidoService.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-application\src\main\java\br\com\datacoper\pedido\application\repository\ItemPedidoRepository.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-application\src\main\java\br\com\datacoper\pedido\application\repository\PapelRepository.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-application\src\main\java\br\com\datacoper\pedido\application\service\PessoaService.java
+>>>>>>> origin/master

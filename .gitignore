@@ -1,1 +1,13 @@
+/pedido-domain/target/
+/pedido-infrastructure/target/
+/pedido-application/target/
 /pedido-gateway/target/
+/pedido-api/target/
+/pedido-api/src/main/java/br/com/codein/seed/Seed.java
+/pedido-presentation/target/
+/.idea/
+/atlassian-ide-plugin.xml
+/pedido.iml
+/**/src/main/resources/rebel.xml
+
+/pedido-application/br.com.codein.pedido.domain.model.*/

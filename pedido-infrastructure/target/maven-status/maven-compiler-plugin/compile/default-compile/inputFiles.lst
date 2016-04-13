@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 C:\gumga\pedido2\pedidoDatacoper\pedido-infrastructure\src\main\java\br\com\datacoper\infrastructure\config\Application.java
 C:\gumga\pedido2\pedidoDatacoper\pedido-infrastructure\src\main\java\br\com\datacoper\infrastructure\config\WebConfig.java
 C:\gumga\pedido2\pedidoDatacoper\pedido-infrastructure\src\main\java\br\com\datacoper\infrastructure\config\Bootstrap.java
 C:\gumga\pedido2\pedidoDatacoper\pedido-infrastructure\src\main\java\br\com\datacoper\infrastructure\config\ApplicationConstants.java
+=======
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-infrastructure\src\main\java\br\com\datacoper\infrastructure\config\WebConfig.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-infrastructure\src\main\java\br\com\datacoper\infrastructure\config\ApplicationConstants.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-infrastructure\src\main\java\br\com\datacoper\infrastructure\config\Bootstrap.java
+C:\gumga\pedidoDatacoper\pedidoDatacoper\pedido-infrastructure\src\main\java\br\com\datacoper\infrastructure\config\Application.java
+>>>>>>> origin/master
